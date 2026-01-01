@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appexy Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+  <body
+    class="min-h-screen bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-800 flex items-center justify-center relative overflow-hidden"
+  >
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0 overflow-hidden">
+      <div
+        class="absolute top-0 -left-20 w-96 h-96 bg-purple-400 rounded-full mix-blend-multiply opacity-70 blur-xl animate-blob"
+      ></div>
+      <div
+        class="absolute top-20 -right-20 w-96 h-96 bg-pink-400 rounded-full mix-blend-multiply opacity-70 blur-xl animate-blob animation-delay-2000"
+      ></div>
+      <div
+        class="absolute -bottom-20 left-20 w-96 h-96 bg-orange-400 rounded-full mix-blend-multiply opacity-70 blur-xl animate-blob animation-delay-4000"
+      ></div>
+      <div
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-cyan-400 rounded-full mix-blend-multiply opacity-60 blur-xl animate-blob animation-delay-6000"
+      ></div>
+    </div>
+
+    <div
+      class="w-full max-w-5xl bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20 overflow-hidden flex flex-col md:flex-row relative z-10"
+    >
+      <!-- Left Side: Sign Up Form -->
+      <div class="w-full md:w-1/2 p-12 flex flex-col justify-center relative">
+        <!-- Glassmorphism overlay -->
+        <div
+          class="absolute inset-0 bg-white/5 backdrop-blur-sm rounded-l-3xl"
+        ></div>
+
+        <div class="relative z-10">
+          <nav class="flex justify-between items-center mb-12 py-2">
+            <!-- Logo Section -->
+            <div class="flex items-center flex-shrink-0">
+              <h1
+                class="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent tracking-tight"
+              >
+                Appexy
+              </h1>
+              <div
+                class="ml-2 w-1.5 h-1.5 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full animate-pulse"
+              ></div>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="hidden lg:flex items-center space-x-0">
+              <a
+                href="#"
+                class="nav-link-pro px-3 py-2 text-white/90 hover:text-white font-medium text-xs tracking-wide transition-all duration-300"
+              >
+                HOME
+              </a>
+              <a
+                href="#"
+                class="nav-link-pro px-3 py-2 text-white/90 hover:text-white font-medium text-xs tracking-wide transition-all duration-300"
+              >
+                ABOUT US
+              </a>
+              <a
+                href="#"
+                class="nav-link-pro px-3 py-2 text-white/90 hover:text-white font-medium text-xs tracking-wide transition-all duration-300"
+              >
+                CONTACT
+              </a>
+
+              <!-- Divider -->
+              <div class="w-px h-4 bg-white/20 mx-2"></div>
+
+              <!-- Sign Up Button -->
+              <a
+                href="#"
+                class="login-nav-btn-pro bg-white/10 border border-white/20 px-4 py-2 rounded-lg text-white font-semibold text-xs tracking-wide hover:bg-white/15 hover:border-white/30 hover:shadow-lg transition-all duration-300 backdrop-blur-sm whitespace-nowrap"
+              >
+                SIGN UP
+              </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button
+              class="lg:hidden p-2 rounded-lg bg-white/10 border border-white/20 backdrop-blur-sm"
+            >
+              <svg
+                class="w-5 h-5 text-white"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </nav>
+
+          <h2 class="text-4xl font-bold text-white mb-2">Create Account</h2>
+          <p class="text-white/70 mb-8">Join us and start your journey today</p>
+
+          <form class="space-y-5">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div class="form-group">
+                <div class="relative">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    class="login-input w-full pl-12 pr-6 py-4 bg-white/10 border border-white/20 rounded-2xl focus:outline-none focus:border-purple-400 focus:bg-white/15 text-white placeholder-white/60 backdrop-blur-sm transition-all duration-300"
+                  />
+                  <span
+                    class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/60 text-xl"
+                  >
+                    👤
+                  </span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="relative">
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    class="login-input w-full pl-12 pr-6 py-4 bg-white/10 border border-white/20 rounded-2xl focus:outline-none focus:border-purple-400 focus:bg-white/15 text-white placeholder-white/60 backdrop-blur-sm transition-all duration-300"
+                  />
+                  <span
+                    class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/60 text-xl"
+                  >
+                    👤
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="relative">
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="login-input w-full pl-12 pr-6 py-4 bg-white/10 border border-white/20 rounded-2xl focus:outline-none focus:border-purple-400 focus:bg-white/15 text-white placeholder-white/60 backdrop-blur-sm transition-all duration-300"
+                />
+                <span
+                  class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/60 text-xl"
+                >
+                  📧
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="relative">
+                <input
+                  type="text"
+                  placeholder="Username"
+                  class="login-input w-full pl-12 pr-6 py-4 bg-white/10 border border-white/20 rounded-2xl focus:outline-none focus:border-purple-400 focus:bg-white/15 text-white placeholder-white/60 backdrop-blur-sm transition-all duration-300"
+                />
+                <span
+                  class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/60 text-xl"
+                >
+                  🏷️
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="relative">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  class="login-input w-full pl-12 pr-6 py-4 bg-white/10 border border-white/20 rounded-2xl focus:outline-none focus:border-purple-400 focus:bg-white/15 text-white placeholder-white/60 backdrop-blur-sm transition-all duration-300"
+                />
+                <span
+                  class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/60 text-xl"
+                >
+                  🔒
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="relative">
+                <input
+                  type="password"
+                  placeholder="Confirm Password"
+                  class="login-input w-full pl-12 pr-6 py-4 bg-white/10 border border-white/20 rounded-2xl focus:outline-none focus:border-purple-400 focus:bg-white/15 text-white placeholder-white/60 backdrop-blur-sm transition-all duration-300"
+                />
+                <span
+                  class="absolute left-4 top-1/2 transform -translate-y-1/2 text-white/60 text-xl"
+                >
+                  🔐
+                </span>
+              </div>
+            </div>
+
+            <div class="flex items-start space-x-3 text-sm">
+              <input type="checkbox" class="custom-checkbox mt-1" />
+              <span class="text-white/80 leading-relaxed">
+                I agree to the
+                <a
+                  href="#"
+                  class="text-purple-300 hover:text-purple-200 transition-colors duration-300 hover:underline"
+                  >Terms of Service</a
+                >
+                and
+                <a
+                  href="#"
+                  class="text-purple-300 hover:text-purple-200 transition-colors duration-300 hover:underline"
+                  >Privacy Policy</a
+                >
+              </span>
+            </div>
+
+            <button
+              type="submit"
+              class="login-btn w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-4 rounded-2xl font-semibold hover:from-purple-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 hover:shadow-lg relative overflow-hidden"
+            >
+              <span class="relative z-10">Create Account</span>
+            </button>
+
+            <div class="text-center text-white/70">
+              Already have an account?
+              <a
+                href="login.html"
+                class="text-purple-300 hover:text-purple-200 transition-colors duration-300 hover:underline font-medium"
+              >
+                Sign in
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Side: Enhanced Decorative Background -->
+      <div
+        class="hidden md:block w-full md:w-1/2 bg-gradient-to-br from-purple-600/80 via-purple-700/80 to-blue-900/80 relative overflow-hidden backdrop-blur-sm"
+      >
+        <div class="absolute inset-0">
+          <!-- Floating geometric shapes -->
+          <div
+            class="absolute top-10 right-10 w-32 h-32 border-2 border-white/20 rounded-3xl rotate-45 animate-float"
+          ></div>
+          <div
+            class="absolute top-32 right-32 w-16 h-16 bg-white/10 rounded-full animate-float animation-delay-2000"
+          ></div>
+          <div
+            class="absolute bottom-32 right-16 w-24 h-24 border border-white/30 rounded-2xl rotate-12 animate-float animation-delay-4000"
+          ></div>
+
+          <!-- Gradient orbs -->
+          <div
+            class="absolute top-0 right-0 w-96 h-96 bg-gradient-to-br from-purple-400/30 to-pink-400/30 rounded-full -translate-x-20 -translate-y-20 animate-pulse"
+          ></div>
+          <div
+            class="absolute bottom-0 left-0 w-80 h-80 bg-gradient-to-tr from-blue-400/30 to-cyan-400/30 rounded-full translate-x-10 translate-y-32 animate-pulse animation-delay-3000"
+          ></div>
+
+          <!-- Content overlay -->
+          <div class="absolute inset-0 flex items-center justify-center">
+            <div class="text-center text-white p-8">
+              <h3 class="text-3xl font-bold mb-4 opacity-90">
+                Start Your Journey
+              </h3>
+              <p class="text-white/80 text-lg leading-relaxed">
+                Join thousands of users who trust Wardiere for their digital
+                transformation needs.
+              </p>
+              <div class="mt-6 flex justify-center space-x-4">
+                <div class="text-center">
+                  <div class="text-2xl font-bold">10K+</div>
+                  <div class="text-sm text-white/70">Active Users</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-2xl font-bold">99%</div>
+                  <div class="text-sm text-white/70">Satisfaction</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-2xl font-bold">24/7</div>
+                  <div class="text-sm text-white/70">Support</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      /* Blob animations */
+      @keyframes blob {
+        0% {
+          transform: translate(0px, 0px) scale(1);
+        }
+        33% {
+          transform: translate(30px, -50px) scale(1.1);
+        }
+        66% {
+          transform: translate(-20px, 20px) scale(0.9);
+        }
+        100% {
+          transform: translate(0px, 0px) scale(1);
+        }
+      }
+
+      /* Floating animation */
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-20px) rotate(5deg);
+        }
+      }
+
+      /* Shimmer effect */
+      @keyframes shimmer {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+
+      .animate-blob {
+        animation: blob 7s infinite;
+      }
+
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+
+      .animation-delay-3000 {
+        animation-delay: 3s;
+      }
+
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+
+      .animation-delay-6000 {
+        animation-delay: 6s;
+      }
+
+      /* Enhanced form inputs */
+      .login-input {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .login-input:focus {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(139, 92, 246, 0.2);
+      }
+
+      .form-group {
+        position: relative;
+      }
+
+      .form-group::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          45deg,
+          transparent,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        border-radius: 1rem;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+      }
+
+      .form-group:hover::before {
+        opacity: 1;
+      }
+
+      /* Enhanced login button */
+      .login-btn {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .login-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .login-btn:hover::before {
+        left: 100%;
+      }
+
+      .login-btn:active {
+        transform: scale(0.98);
+      }
+
+      /* Custom checkbox */
+      .custom-checkbox {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 4px;
+        background: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        position: relative;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
+      }
+
+      .custom-checkbox:checked {
+        background: linear-gradient(135deg, #8b5cf6, #3b82f6);
+        border-color: #8b5cf6;
+      }
+
+      .custom-checkbox:checked::after {
+        content: "✓";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+      }
+
+      /* Professional Navigation Links */
+      .nav-link-pro {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .nav-link-pro::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, #60a5fa, #a78bfa);
+        transform: translateX(-50%);
+        transition: width 0.3s ease;
+      }
+
+      .nav-link-pro:hover::before {
+        width: 80%;
+      }
+
+      .nav-link-pro::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+          circle at center,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 12px;
+      }
+
+      .nav-link-pro:hover::after {
+        opacity: 1;
+      }
+
+      /* Professional Login Button */
+      .login-nav-btn-pro {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .login-nav-btn-pro::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.15),
+          transparent
+        );
+        transition: left 0.5s ease;
+      }
+
+      .login-nav-btn-pro:hover::before {
+        left: 100%;
+      }
+
+      .login-nav-btn-pro:hover {
+        transform: translateY(-2px);
+      }
+
+      .login-nav-btn-pro:active {
+        transform: translateY(0);
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+        .animate-blob {
+          width: 200px;
+          height: 200px;
+        }
+
+        .grid-cols-2 {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      /* Glassmorphism enhancements */
+      .backdrop-blur-lg {
+        backdrop-filter: blur(16px);
+      }
+
+      .backdrop-blur-sm {
+        backdrop-filter: blur(4px);
+      }
+
+      /* Gradient text animation */
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .bg-gradient-to-r {
+        background-size: 200% 200%;
+        animation: gradient 3s ease infinite;
+      }
+    </style>
+  </body>
+</html>

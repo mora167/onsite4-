@@ -1,0 +1,2671 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Appexy Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+      };
+    </script>
+  </head>
+
+  <body
+    class="min-h-screen bg-white dark:bg-black text-gray-900 dark:text-gray-100 transition-colors duration-300"
+  >
+    <main>
+      <header
+        class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center"
+      >
+        <!-- Clean Logo Section -->
+        <div class="flex items-center group cursor-pointer">
+          <div class="relative">
+            <img
+              class="h-7 w-auto block dark:hidden transition-all duration-500 group-hover:scale-110 drop-shadow-lg filter group-hover:brightness-110"
+              src="./images (1)/download (6).png"
+              alt="Appexy Logo"
+            />
+            <img
+              class="h-7 w-auto hidden dark:block transition-all duration-500 group-hover:scale-110 drop-shadow-lg filter group-hover:brightness-110"
+              src="./images (1)/download (7).png"
+              alt="Appexy Logo Dark"
+            />
+
+            <!-- Animated glow effect behind logo -->
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-blue-500/20 rounded-lg blur-lg opacity-0 group-hover:opacity-100 transition-all duration-500 -z-10 animate-pulse-slow"
+            ></div>
+
+            <!-- Rotating border effect -->
+            <div
+              class="absolute inset-0 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"
+            >
+              <div
+                class="absolute inset-0 rounded-lg bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 animate-spin-slow opacity-30 blur-sm"
+              ></div>
+            </div>
+          </div>
+        </div>
+        <nav class="hidden md:flex space-x-8 text-sm font-medium py-1">
+          <a
+            href="#"
+            class="nav-link hover:text-purple-600 dark:hover:text-purple-400 active-page"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="nav-link hover:text-purple-600 dark:hover:text-purple-400"
+            >Features</a
+          >
+          <a
+            href="#"
+            class="nav-link hover:text-purple-600 dark:hover:text-purple-400"
+            >Download</a
+          >
+          <a
+            href="#"
+            class="nav-link hover:text-purple-600 dark:hover:text-purple-400"
+            >Pricing</a
+          >
+          <a
+            href="#"
+            class="nav-link hover:text-purple-600 dark:hover:text-purple-400"
+            >Product</a
+          >
+        </nav>
+        <div class="auth-buttons flex items-center space-x-4">
+          <button
+            id="theme-toggle"
+            class="relative p-3 rounded-xl bg-gradient-to-r from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-700 hover:from-gray-200 hover:to-gray-300 dark:hover:from-gray-700 dark:hover:to-gray-600 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl border border-gray-300/50 dark:border-gray-600/50 group overflow-hidden"
+          >
+            <!-- Animated background glow -->
+            <div
+              class="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-400/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl"
+            ></div>
+
+            <!-- Sun icon with enhanced animations -->
+            <svg
+              id="sun"
+              class="w-5 h-5 hidden dark:block text-yellow-500 relative z-10 transition-all duration-500 transform group-hover:rotate-180 group-hover:scale-110 drop-shadow-lg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm-3.05-.464l.707-.707a1 1 0 00-1.414-1.414l-.707.707a1 1 0 001.414 1.414zM4.343 4.343a1 1 0 011.414 0l.707.707a1 1 0 11-1.414 1.414l-.707-.707a1 1 0 010-1.414z"
+              />
+            </svg>
+
+            <!-- Moon icon with enhanced animations -->
+            <svg
+              id="moon"
+              class="w-5 h-5 block dark:hidden text-indigo-600 relative z-10 transition-all duration-500 transform group-hover:-rotate-12 group-hover:scale-110 drop-shadow-lg"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+              />
+            </svg>
+
+            <!-- Animated shimmer effect -->
+            <div
+              class="absolute inset-0 -top-2 -bottom-2 bg-gradient-to-r from-transparent via-white/30 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-out"
+            ></div>
+          </button>
+          <a
+            href="login.html"
+            target="_blank"
+            class="text-sm px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 auth-btn signup"
+            style="border-radius: 15px"
+          >
+            Log in
+          </a>
+          <a
+            href="signup.html"
+            target="_blank"
+            class="text-sm px-4 py-2 rounded-lg bg-blue-600 text-white hover:bg-blue-700 auth-btn login"
+            style="border-radius: 15px"
+          >
+            Sign Up
+          </a>
+        </div>
+      </header>
+
+      <section
+        class="mm max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16 lg:py-20 flex flex-col lg:flex-row items-center justify-between relative"
+      >
+        <div class="lg:w-1/2 text-center lg:text-left z-10 mb-12 lg:mb-0">
+          <h1
+            class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+          >
+            Manage Your Activity<br />
+            With <span class="text-blue-600">Appexy </span>
+          </h1>
+          <p
+            class="text-gray-600 dark:text-gray-400 mb-8 sm:mb-10 max-w-lg mx-auto lg:mx-0 text-base sm:text-lg"
+          >
+            Discover simple, efficient productivity tools to manage your daily
+            tasks and projects. Stay organized, track your progress, and achieve
+            more with Appexy.
+          </p>
+          <div
+            class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+          >
+            <button
+              class="cta-primary px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition text-sm sm:text-base"
+              style="border-radius: 30px"
+            >
+              Get Started Today
+            </button>
+            <button
+              style="border-radius: 30px"
+              class="cta-secondary px-6 sm:px-8 py-3 sm:py-4 border border-gray-300 dark:border-gray-600 font-medium rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition download-btn text-sm sm:text-base"
+            >
+              Download App
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="lg:w-1/2 relative w-full flex justify-center lg:justify-end items-center mt-8 sm:mt-12 lg:mt-0"
+        >
+          <div class="relative w-40 sm:w-44 md:w-48 lg:w-52 max-w-xs">
+            <div class="absolute inset-0 -z-10 scale-125">
+              <div
+                class="absolute top-0 -left-8 sm:-left-12 w-32 sm:w-48 h-32 sm:h-48 bg-purple-300 dark:bg-purple-900 rounded-full mix-blend-multiply dark:mix-blend-screen opacity-70 blur-xl animate-blob"
+              ></div>
+              <div
+                class="absolute top-8 sm:top-12 -right-8 sm:-right-12 w-32 sm:w-48 h-32 sm:h-48 bg-pink-300 dark:bg-pink-900 rounded-full mix-blend-multiply dark:mix-blend-screen opacity-70 blur-xl animate-blob animation-delay-2000"
+              ></div>
+              <div
+                class="absolute -bottom-8 sm:-bottom-12 left-8 sm:left-12 w-32 sm:w-48 h-32 sm:h-48 bg-orange-300 dark:bg-orange-900 rounded-full mix-blend-multiply dark:mix-blend-screen opacity-70 blur-xl animate-blob animation-delay-4000"
+              ></div>
+            </div>
+            <div class="img">
+              <img
+                src="./images (1)/hero-2-img.e00536899165fc0261f3.png"
+                alt="Appexy Mobile App"
+                class="w- h-auto relative z-10"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-white dark:bg-gray-100 rounded-2xl overflow-hidden"
+        ></div>
+      </section>
+    </main>
+
+    <!-- Smart Solutions Section -->
+    <section
+      class="py-20 bg-gradient-to-br from-gray-100 via-blue-50 to-gray-100 dark:from-black dark:via-gray-900 dark:to-black text-gray-900 dark:text-white relative overflow-hidden transition-colors duration-300"
+    >
+      <!-- Background decorative elements -->
+      <div class="absolute inset-0">
+        <div
+          class="absolute top-0 left-0 w-96 h-96 bg-blue-600/5 dark:bg-blue-600/10 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-80 h-80 bg-purple-600/5 dark:bg-purple-600/10 rounded-full blur-3xl"
+        ></div>
+        <div
+          class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-600/5 dark:bg-cyan-600/10 rounded-full blur-3xl"
+        ></div>
+      </div>
+
+      <!-- Grid pattern overlay -->
+      <div class="absolute inset-0 opacity-5 dark:opacity-5">
+        <div
+          class="absolute inset-0"
+          style="
+            background-image: radial-gradient(
+              circle at 1px 1px,
+              rgba(59, 130, 246, 0.2) 1px,
+              transparent 0
+            );
+            background-size: 20px 20px;
+          "
+        ></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16">
+          <p
+            class="text-sm text-blue-600 dark:text-blue-400 uppercase tracking-wide mb-4 font-semibold"
+          >
+            Our Features
+          </p>
+          <h2
+            class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
+          >
+            Smart Solutions For Busy People
+          </h2>
+          <p
+            class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg leading-relaxed"
+          >
+            Streamline your workflow with intelligent features designed to save
+            time and boost productivity for modern professionals.
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+          <!-- Left Side - Enhanced Phone Images -->
+          <div class="relative order-2 lg:order-1 animate-slide-in-left">
+            <div class="relative px-4 sm:px-8 lg:px-0">
+              <!-- Enhanced Glow effect behind image -->
+              <div
+                class="absolute inset-0 bg-blue-500/10 dark:bg-blue-500/20 rounded-3xl blur-2xl transform scale-110 animate-pulse-glow"
+              ></div>
+
+              <!-- Additional animated background elements -->
+              <div
+                class="absolute -top-4 -right-4 w-8 h-8 bg-blue-400/30 rounded-full animate-float-dot animation-delay-1000"
+              ></div>
+              <div
+                class="absolute -bottom-6 -left-6 w-6 h-6 bg-purple-400/30 rounded-full animate-float-dot animation-delay-1500"
+              ></div>
+              <div
+                class="absolute top-1/2 -right-8 w-4 h-4 bg-pink-400/30 rounded-full animate-float-dot animation-delay-2000"
+              ></div>
+
+              <!-- Phone container with enhanced animations -->
+              <div class="relative animate-phone-showcase group">
+                <img
+                  src="./images (1)/features-1.bc7b2e31dc2030c17a64.png"
+                  alt="Mobile App Features"
+                  class="w-full max-w-xs sm:max-w-sm lg:max-w-md mx-auto relative z-10 drop-shadow-2xl animate-float-phone group-hover:animate-phone-tilt transition-all duration-500"
+                />
+
+                <!-- Simulated screen content animations -->
+                <div
+                  class="absolute top-[15%] left-[10%] right-[10%] bottom-[20%] pointer-events-none opacity-60"
+                >
+                  <!-- Animated dashboard cards -->
+                  <div
+                    class="absolute top-[18%] right-[12%] w-[35%] h-[12%] bg-gradient-to-r from-blue-500/20 to-blue-600/30 rounded-lg animate-card-slide animation-delay-3000 backdrop-blur-sm border border-blue-400/20"
+                  ></div>
+                  <div
+                    class="absolute top-[35%] right-[12%] w-[35%] h-[12%] bg-gradient-to-r from-green-500/20 to-green-600/30 rounded-lg animate-card-slide animation-delay-3500 backdrop-blur-sm border border-green-400/20"
+                  ></div>
+                  <div
+                    class="absolute top-[52%] right-[12%] w-[35%] h-[12%] bg-gradient-to-r from-purple-500/20 to-purple-600/30 rounded-lg animate-card-slide animation-delay-4000 backdrop-blur-sm border border-purple-400/20"
+                  ></div>
+
+                  <!-- Animated progress indicators inside cards -->
+                  <div
+                    class="absolute top-[22%] right-[15%] w-[25%] h-[1px] bg-blue-400 animate-progress-fill animation-delay-3200"
+                  ></div>
+                  <div
+                    class="absolute top-[39%] right-[15%] w-[28%] h-[1px] bg-green-400 animate-progress-fill animation-delay-3700"
+                  ></div>
+                  <div
+                    class="absolute top-[56%] right-[15%] w-[20%] h-[1px] bg-purple-400 animate-progress-fill animation-delay-4200"
+                  ></div>
+
+                  <!-- Animated status indicators -->
+                  <div
+                    class="absolute top-[20%] right-[14%] w-[6px] h-[6px] bg-blue-400 rounded-full animate-status-pulse animation-delay-3400"
+                  ></div>
+                  <div
+                    class="absolute top-[37%] right-[14%] w-[6px] h-[6px] bg-green-400 rounded-full animate-status-pulse animation-delay-3900"
+                  ></div>
+                  <div
+                    class="absolute top-[54%] right-[14%] w-[6px] h-[6px] bg-purple-400 rounded-full animate-status-pulse animation-delay-4400"
+                  ></div>
+
+                  <!-- Animated notification dots -->
+                  <div
+                    class="absolute top-[10%] right-[15%] w-2 h-2 bg-red-500 rounded-full animate-notification-pulse animation-delay-2500"
+                  ></div>
+                  <div
+                    class="absolute top-[25%] right-[20%] w-1.5 h-1.5 bg-blue-500 rounded-full animate-notification-pulse animation-delay-3000"
+                  ></div>
+
+                  <!-- Animated chart elements -->
+                  <div
+                    class="absolute bottom-[30%] right-[15%] w-[35%] h-[25%]"
+                  >
+                    <div
+                      class="absolute bottom-0 left-[10%] w-[4px] h-[60%] bg-blue-400 animate-chart-bar animation-delay-4500"
+                    ></div>
+                    <div
+                      class="absolute bottom-0 left-[25%] w-[4px] h-[80%] bg-blue-400 animate-chart-bar animation-delay-5000"
+                    ></div>
+                    <div
+                      class="absolute bottom-0 left-[40%] w-[4px] h-[45%] bg-blue-400 animate-chart-bar animation-delay-5500"
+                    ></div>
+                    <div
+                      class="absolute bottom-0 left-[55%] w-[4px] h-[90%] bg-blue-400 animate-chart-bar animation-delay-6000"
+                    ></div>
+                    <div
+                      class="absolute bottom-0 left-[70%] w-[4px] h-[70%] bg-blue-400 animate-chart-bar animation-delay-6500"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side - Enhanced Features List -->
+          <div class="space-y-8 order-1 lg:order-2 animate-slide-in-right">
+            <div class="animate-fade-in-up animation-delay-600">
+              <h3
+                class="text-3xl font-bold text-gray-900 dark:text-white mb-6 animate-text-glow"
+              >
+                Discover your destination
+              </h3>
+              <p
+                class="text-gray-600 dark:text-gray-300 mb-8 text-lg leading-relaxed"
+              >
+                On the other hand, we denounce with righteous indignation and
+                dislike men who are so beguiled and demoralized by the charms of
+                pleasure of the moment.
+              </p>
+            </div>
+
+            <!-- Feature items -->
+            <div class="space-y-8">
+              <div class="flex items-start space-x-4 feature-item group">
+                <div
+                  class="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/25 transition-all duration-300"
+                >
+                  <svg
+                    class="w-5 h-5 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4
+                    class="text-xl font-semibold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors duration-300"
+                  >
+                    <span class="text-blue-600 dark:text-blue-400"
+                      >The wise therefore always holds</span
+                    >
+                    in us matters to this principle a selection a rejects
+                    pleasures.
+                  </h4>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4 feature-item group">
+                <div
+                  class="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/25 transition-all duration-300"
+                >
+                  <svg
+                    class="w-5 h-5 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm0 2h12v8H4V6z"
+                      clip-rule="evenodd"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      d="M6 8a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm0 2a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1zm0 2a1 1 0 011-1h4a1 1 0 110 2H7a1 1 0 01-1-1z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4
+                    class="text-xl font-semibold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors duration-300"
+                  >
+                    Sed perspiciatis omnis a natus error accusantium doloremque
+                    laudantium totam rem aperiam eaque ipsa quae ab illo
+                    inventore.
+                  </h4>
+                </div>
+              </div>
+
+              <div class="flex items-start space-x-4 feature-item group">
+                <div
+                  class="flex-shrink-0 w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center shadow-lg group-hover:shadow-blue-500/25 transition-all duration-300"
+                >
+                  <svg
+                    class="w-5 h-5 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <h4
+                    class="text-xl font-semibold text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-300 transition-colors duration-300"
+                  >
+                    Et at quidem rerum facilis
+                    <span class="text-blue-600 dark:text-blue-400"
+                      >expedita</span
+                    >
+                    distinctio nam libero tempore cum
+                    <span class="text-blue-600 dark:text-blue-400"
+                      >soluta nobis est</span
+                    >.
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section
+      class="py-20 bg-gray-50 dark:bg-gray-950 text-gray-900 dark:text-white transition-colors duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <p
+            class="text-sm text-blue-600 dark:text-blue-400 uppercase tracking-wide mb-4 font-semibold"
+          >
+            Our Pricing
+          </p>
+          <h2
+            class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6"
+          >
+            Pricing Plan
+          </h2>
+          <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-lg">
+            Sed ut perspiciatis unde omnis iste natus error voluptatem
+            accusantium doloremque rem aperiam.
+          </p>
+        </div>
+
+        <!-- Pricing Toggle -->
+        <div class="flex justify-center mb-12">
+          <div
+            class="bg-gray-200 dark:bg-gray-800 rounded-full p-1 flex transition-colors duration-300"
+          >
+            <button
+              class="pricing-toggle active px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-blue-600 text-white"
+            >
+              Monthly
+            </button>
+            <button
+              class="pricing-toggle px-6 py-2 rounded-full text-sm font-semibold transition-all duration-300 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
+            >
+              Yearly
+            </button>
+          </div>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+          <!-- Free Plan -->
+          <div
+            class="pricing-card bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 p-8 relative hover:shadow-xl transition-all duration-300"
+          >
+            <div class="text-center mb-8">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Free
+              </h3>
+              <div class="mb-6">
+                <span
+                  class="text-4xl font-bold text-blue-600 dark:text-blue-400"
+                  >$0.00</span
+                >
+                <span class="text-gray-500 dark:text-gray-400">/Month</span>
+              </div>
+            </div>
+
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">3 Projects</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-blue-500 dark:text-blue-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >50GB Storage</span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-purple-500 dark:text-purple-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >Unlimited Contacts</span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-orange-500 dark:text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">5 Domains</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-red-500 dark:text-red-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >Free Support
+                  <span class="text-red-500 dark:text-red-400 font-semibold"
+                    >24/7</span
+                  ></span
+                >
+              </li>
+            </ul>
+
+            <button
+              class="w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-3 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-300"
+            >
+              Choose Plan
+            </button>
+          </div>
+
+          <!-- Standard Plan (Most Popular) -->
+          <div
+            class="pricing-card bg-white dark:bg-gray-900 rounded-2xl border-2 border-blue-500 p-8 relative hover:shadow-xl transition-all duration-300 transform scale-105"
+          >
+            <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+              <span
+                class="bg-gradient-to-r from-pink-500 to-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold"
+              >
+                Most Popular
+              </span>
+            </div>
+
+            <div class="text-center mb-8">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Standard
+              </h3>
+              <div class="mb-6">
+                <span
+                  class="text-4xl font-bold text-blue-600 dark:text-blue-400"
+                  >$29.00</span
+                >
+                <span class="text-gray-500 dark:text-gray-400">/Month</span>
+              </div>
+            </div>
+
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >10 Projects</span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-blue-500 dark:text-blue-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >1TB Storage</span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-purple-500 dark:text-purple-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >Unlimited Contacts</span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-orange-500 dark:text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">12 Domains</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-red-500 dark:text-red-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >Free Support
+                  <span class="text-red-500 dark:text-red-400 font-semibold"
+                    >24/7</span
+                  ></span
+                >
+              </li>
+            </ul>
+
+            <button
+              class="w-full bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors duration-300"
+            >
+              Choose Plan
+            </button>
+          </div>
+
+          <!-- Enterprise Plan -->
+          <div
+            class="pricing-card bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 p-8 relative hover:shadow-xl transition-all duration-300"
+          >
+            <div class="text-center mb-8">
+              <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                Enterprise
+              </h3>
+              <div class="mb-6">
+                <span
+                  class="text-4xl font-bold text-blue-600 dark:text-blue-400"
+                  >$49.00</span
+                >
+                <span class="text-gray-500 dark:text-gray-400">/Month</span>
+              </div>
+            </div>
+
+            <ul class="space-y-4 mb-8">
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-green-500 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >20 Projects</span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-blue-500 dark:text-blue-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >2.5TB Storage</span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-purple-500 dark:text-purple-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >Unlimited Contacts</span
+                >
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-orange-500 dark:text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300">18 Domains</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-red-500 dark:text-red-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                <span class="text-gray-600 dark:text-gray-300"
+                  >Free Support
+                  <span class="text-red-500 dark:text-red-400 font-semibold"
+                    >24/7</span
+                  ></span
+                >
+              </li>
+            </ul>
+
+            <button
+              class="w-full bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white py-3 rounded-xl font-semibold hover:bg-gray-200 dark:hover:bg-gray-600 transition-colors duration-300"
+            >
+              Choose Plan
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section
+      class="pt-20 pb-20 relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-blue-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 transition-colors duration-300"
+    >
+      <!-- Animated Background Elements -->
+      <div class="absolute inset-0">
+        <!-- Floating orbs -->
+        <div
+          class="absolute top-20 left-10 w-32 h-32 bg-blue-500/20 rounded-full blur-xl animate-float-slow"
+        ></div>
+        <div
+          class="absolute top-40 right-20 w-24 h-24 bg-purple-500/20 rounded-full blur-xl animate-float-medium"
+        ></div>
+        <div
+          class="absolute bottom-32 left-1/4 w-40 h-40 bg-cyan-500/15 rounded-full blur-xl animate-float-fast"
+        ></div>
+        <div
+          class="absolute bottom-20 right-10 w-28 h-28 bg-pink-500/20 rounded-full blur-xl animate-float-slow"
+        ></div>
+
+        <!-- Grid pattern -->
+        <div class="absolute inset-0 opacity-10">
+          <div
+            class="absolute inset-0"
+            style="
+              background-image: radial-gradient(
+                circle at 2px 2px,
+                rgba(59, 130, 246, 0.3) 1px,
+                transparent 0
+              );
+              background-size: 40px 40px;
+            "
+          ></div>
+        </div>
+
+        <!-- Gradient overlay -->
+        <div
+          class="absolute inset-0 bg-gradient-to-br from-blue-900/10 via-transparent to-purple-900/10"
+        ></div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+          <p
+            class="text-sm text-blue-400 uppercase tracking-wide mb-4 font-semibold animate-fade-in-up"
+          >
+            Our Contact Us
+          </p>
+          <h2
+            class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-6 animate-fade-in-up animation-delay-200"
+          >
+            Get in Touch
+          </h2>
+          <p
+            class="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto text-lg animate-fade-in-up animation-delay-400"
+          >
+            Sed ut perspiciatis unde omnis iste natus error voluptatem
+            accusantium doloremque rem aperiam.
+          </p>
+        </div>
+
+        <!-- Contact Content -->
+        <div class="grid lg:grid-cols-2 gap-16 items-start">
+          <!-- Left Side - Contact Info -->
+          <div class="space-y-8">
+            <!-- Say Hello -->
+            <div class="flex items-start space-x-4">
+              <div
+                class="flex-shrink-0 w-12 h-12 bg-yellow-100 dark:bg-yellow-900/30 rounded-xl flex items-center justify-center"
+              >
+                <span class="text-2xl">💬</span>
+              </div>
+              <div>
+                <h3
+                  class="text-xl font-bold text-gray-900 dark:text-white mb-2"
+                >
+                  Say Hello!
+                </h3>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="flex items-start space-x-4 contact-item group">
+              <div
+                class="flex-shrink-0 w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center group-hover:bg-blue-200 dark:group-hover:bg-blue-800/50 transition-colors duration-300"
+              >
+                <svg
+                  class="w-6 h-6 text-blue-600 dark:text-blue-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                  />
+                  <path
+                    d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4
+                  class="text-lg font-semibold text-blue-600 dark:text-blue-400 mb-2"
+                >
+                  Email
+                </h4>
+                <p class="text-gray-600 dark:text-gray-300">wesxy@gmail.com</p>
+                <p class="text-gray-600 dark:text-gray-300">wesxy@gmail.com</p>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="flex items-start space-x-4 contact-item group">
+              <div
+                class="flex-shrink-0 w-12 h-12 bg-green-100 dark:bg-green-900/30 rounded-xl flex items-center justify-center group-hover:bg-green-200 dark:group-hover:bg-green-800/50 transition-colors duration-300"
+              >
+                <svg
+                  class="w-6 h-6 text-green-600 dark:text-green-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4
+                  class="text-lg font-semibold text-green-600 dark:text-green-400 mb-2"
+                >
+                  Phone
+                </h4>
+                <p class="text-gray-600 dark:text-gray-300">
+                  (+01) 1234 5678 00
+                </p>
+                <p class="text-gray-600 dark:text-gray-300">
+                  (+01) 1234 5678 90
+                </p>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="flex items-start space-x-4 contact-item group">
+              <div
+                class="flex-shrink-0 w-12 h-12 bg-purple-100 dark:bg-purple-900/30 rounded-xl flex items-center justify-center group-hover:bg-purple-200 dark:group-hover:bg-purple-800/50 transition-colors duration-300"
+              >
+                <svg
+                  class="w-6 h-6 text-purple-600 dark:text-purple-400"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4
+                  class="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-2"
+                >
+                  Address
+                </h4>
+                <div class="space-y-2">
+                  <div>
+                    <p class="font-medium text-gray-900 dark:text-white">
+                      New York Office
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300">
+                      333 Maple Street, Monroe Avenue, CA 90017
+                    </p>
+                  </div>
+                  <div>
+                    <p class="font-medium text-blue-600 dark:text-blue-400">
+                      Appexy Office
+                    </p>
+                    <p class="text-gray-600 dark:text-gray-300">
+                      2118 Bird Spring, Creek Road, TX 77388
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Side - Contact Form -->
+          <div
+            class="bg-white dark:bg-gray-900 rounded-2xl p-8 shadow-lg border border-gray-200 dark:border-gray-700"
+          >
+            <form class="space-y-6">
+              <!-- Name Fields -->
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Your first name..."
+                    class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Last first name..."
+                    class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
+                  />
+                </div>
+              </div>
+
+              <!-- Email and Phone -->
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <input
+                    type="email"
+                    placeholder="Your email..."
+                    class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="tel"
+                    placeholder="Type phone number..."
+                    class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
+                  />
+                </div>
+              </div>
+
+              <!-- Subject -->
+              <div>
+                <input
+                  type="text"
+                  placeholder="Type subject..."
+                  class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300"
+                />
+              </div>
+
+              <div>
+                <textarea
+                  rows="5"
+                  placeholder="Type messages..."
+                  class="w-full px-4 py-3 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 transition-all duration-300 resize-none"
+                ></textarea>
+              </div>
+
+              <div>
+                <button
+                  type="submit"
+                  class="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white py-4 px-6 rounded-xl font-semibold hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+                >
+                  <span>SEND MESSAGES</span>
+                  <svg
+                    class="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .img {
+        width: 300px;
+        position: relative;
+        right: 40px;
+      }
+      .mm {
+        position: relative;
+        top: 100px;
+      }
+      * {
+        text-transform: capitalize;
+      }
+      main {
+        height: 100vh;
+      }
+      @keyframes blob {
+        0% {
+          transform: translate(0px, 0px) scale(1);
+        }
+        33% {
+          transform: translate(30px, -50px) scale(1.1);
+        }
+        66% {
+          transform: translate(-20px, 20px) scale(0.9);
+        }
+        100% {
+          transform: translate(0px, 0px) scale(1);
+        }
+      }
+      .animate-blob {
+        animation: blob 7s infinite;
+      }
+      .animation-delay-2000 {
+        animation-delay: 2s;
+      }
+      .animation-delay-4000 {
+        animation-delay: 4s;
+      }
+
+      /* Advanced keyframe animations for Smart Solutions section */
+      @keyframes fade-in-up {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slide-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes slide-in-right {
+        0% {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      @keyframes float-phone {
+        0%,
+        100% {
+          transform: translateY(0px) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-10px) rotate(1deg);
+        }
+      }
+
+      @keyframes phone-tilt {
+        0%,
+        100% {
+          transform: translateY(-10px) rotate(1deg) scale(1);
+        }
+        50% {
+          transform: translateY(-15px) rotate(-2deg) scale(1.02);
+        }
+      }
+
+      @keyframes pulse-glow {
+        0%,
+        100% {
+          opacity: 0.1;
+          transform: scale(1.1);
+        }
+        50% {
+          opacity: 0.2;
+          transform: scale(1.15);
+        }
+      }
+
+      @keyframes float-dot {
+        0%,
+        100% {
+          transform: translateY(0px) scale(1);
+          opacity: 0.3;
+        }
+        50% {
+          transform: translateY(-15px) scale(1.2);
+          opacity: 0.6;
+        }
+      }
+
+      @keyframes data-bar {
+        0% {
+          width: 0%;
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          width: 100%;
+          opacity: 0.8;
+        }
+      }
+
+      @keyframes card-slide {
+        0% {
+          transform: translateX(100px);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      @keyframes progress-fill {
+        0% {
+          width: 0%;
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          width: 100%;
+          opacity: 0.9;
+        }
+      }
+
+      @keyframes status-pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 0.8;
+        }
+        50% {
+          transform: scale(1.4);
+          opacity: 1;
+        }
+      }
+
+      @keyframes chart-bar {
+        0% {
+          height: 0%;
+          opacity: 0;
+        }
+        100% {
+          height: 100%;
+          opacity: 1;
+        }
+      }
+
+      @keyframes notification-pulse {
+        0%,
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+        50% {
+          transform: scale(1.3);
+          opacity: 0.7;
+        }
+      }
+
+      @keyframes text-glow {
+        0%,
+        100% {
+          text-shadow: 0 0 5px rgba(59, 130, 246, 0.3);
+        }
+        50% {
+          text-shadow: 0 0 20px rgba(59, 130, 246, 0.6),
+            0 0 30px rgba(59, 130, 246, 0.4);
+        }
+      }
+
+      @keyframes phone-showcase {
+        0% {
+          transform: perspective(1000px) rotateY(0deg);
+        }
+        100% {
+          transform: perspective(1000px) rotateY(0deg);
+        }
+      }
+
+      /* Animation classes */
+      .animate-fade-in-up {
+        animation: fade-in-up 0.8s ease-out forwards;
+        opacity: 0;
+      }
+
+      .animate-slide-in-left {
+        animation: slide-in-left 1s ease-out forwards;
+        opacity: 0;
+      }
+
+      .animate-slide-in-right {
+        animation: slide-in-right 1s ease-out forwards;
+        opacity: 0;
+      }
+
+      .animate-float-phone {
+        animation: float-phone 4s ease-in-out infinite;
+      }
+
+      .animate-phone-tilt:hover {
+        animation: phone-tilt 2s ease-in-out infinite;
+      }
+
+      .animate-pulse-glow {
+        animation: pulse-glow 3s ease-in-out infinite;
+      }
+
+      .animate-float-dot {
+        animation: float-dot 3s ease-in-out infinite;
+      }
+
+      .animate-data-bar {
+        animation: data-bar 2s ease-out forwards;
+      }
+
+      .animate-card-slide {
+        animation: card-slide 1s ease-out forwards;
+        opacity: 0;
+      }
+
+      .animate-progress-fill {
+        animation: progress-fill 1.5s ease-out forwards;
+      }
+
+      .animate-status-pulse {
+        animation: status-pulse 2s ease-in-out infinite;
+      }
+
+      .animate-chart-bar {
+        animation: chart-bar 1.5s ease-out forwards;
+      }
+
+      .animate-notification-pulse {
+        animation: notification-pulse 2s ease-in-out infinite;
+      }
+
+      .animate-text-glow {
+        animation: text-glow 3s ease-in-out infinite;
+      }
+
+      .animate-phone-showcase {
+        animation: phone-showcase 8s ease-in-out infinite;
+      }
+
+      /* Extended animation delays */
+      .animation-delay-600 {
+        animation-delay: 0.6s;
+      }
+
+      .animation-delay-800 {
+        animation-delay: 0.8s;
+      }
+
+      .animation-delay-1000 {
+        animation-delay: 1s;
+      }
+
+      .animation-delay-1200 {
+        animation-delay: 1.2s;
+      }
+
+      .animation-delay-1500 {
+        animation-delay: 1.5s;
+      }
+
+      .animation-delay-2500 {
+        animation-delay: 2.5s;
+      }
+
+      .animation-delay-3000 {
+        animation-delay: 3s;
+      }
+
+      .animation-delay-3500 {
+        animation-delay: 3.5s;
+      }
+
+      .animation-delay-4500 {
+        animation-delay: 4.5s;
+      }
+
+      .animation-delay-5000 {
+        animation-delay: 5s;
+      }
+
+      .animation-delay-5500 {
+        animation-delay: 5.5s;
+      }
+
+      .animation-delay-6000 {
+        animation-delay: 6s;
+      }
+
+      .animation-delay-6500 {
+        animation-delay: 6.5s;
+      }
+
+      .animation-delay-3200 {
+        animation-delay: 3.2s;
+      }
+
+      .animation-delay-3400 {
+        animation-delay: 3.4s;
+      }
+
+      .animation-delay-3700 {
+        animation-delay: 3.7s;
+      }
+
+      .animation-delay-3900 {
+        animation-delay: 3.9s;
+      }
+
+      .animation-delay-4200 {
+        animation-delay: 4.2s;
+      }
+
+      .animation-delay-4400 {
+        animation-delay: 4.4s;
+      }
+
+      /* Enhanced Logo Animations */
+      @keyframes pulse-slow {
+        0%,
+        100% {
+          opacity: 0.3;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.6;
+          transform: scale(1.05);
+        }
+      }
+
+      @keyframes spin-slow {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes bounce-slow {
+        0%,
+        100% {
+          transform: translateY(0px) scale(1);
+        }
+        50% {
+          transform: translateY(-4px) scale(1.1);
+        }
+      }
+
+      @keyframes logo-breathe {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.02);
+        }
+      }
+
+      @keyframes text-gradient-shift {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+
+      /* Logo specific styles */
+      .animate-pulse-slow {
+        animation: pulse-slow 3s ease-in-out infinite;
+      }
+
+      .animate-spin-slow {
+        animation: spin-slow 8s linear infinite;
+      }
+
+      .animate-bounce-slow {
+        animation: bounce-slow 2s ease-in-out infinite;
+      }
+
+      .logo-section {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .logo-section:hover {
+        animation: logo-breathe 2s ease-in-out infinite;
+      }
+
+      /* Enhanced text gradient animation */
+      .logo-section:hover span {
+        background-size: 200% 200%;
+        animation: text-gradient-shift 3s ease-in-out infinite;
+      }
+
+      /* Logo glow effect */
+      .logo-section::before {
+        content: "";
+        position: absolute;
+        inset: -2px;
+        border-radius: 12px;
+        padding: 2px;
+        background: linear-gradient(
+          45deg,
+          transparent,
+          rgba(59, 130, 246, 0.3),
+          transparent,
+          rgba(147, 51, 234, 0.3),
+          transparent
+        );
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: xor;
+        -webkit-mask-composite: xor;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+      }
+
+      .logo-section:hover::before {
+        opacity: 1;
+        animation: spin-slow 4s linear infinite;
+      }
+
+      /* Logo click effect */
+      .logo-section:active {
+        transform: scale(0.95);
+      }
+
+      /* Tagline animation */
+      .logo-section span:last-child {
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      /* Back to Top Button Styles */
+      #back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: 9999;
+      }
+
+      #back-to-top.show {
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: translateY(0) !important;
+        animation: button-entrance 0.6s ease-out;
+      }
+
+      #back-to-top:active {
+        transform: scale(0.9);
+        animation: button-click 0.3s ease-out;
+      }
+
+      #back-to-top:hover {
+        animation: button-hover-bounce 1.5s ease-in-out infinite;
+      }
+
+      /* Enhanced Back to Top Button Keyframe Animations */
+      @keyframes button-entrance {
+        0% {
+          opacity: 0;
+          transform: translateY(100px) scale(0.3) rotate(180deg);
+        }
+        50% {
+          opacity: 0.8;
+          transform: translateY(-10px) scale(1.1) rotate(0deg);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0) scale(1) rotate(0deg);
+        }
+      }
+
+      @keyframes button-hover-bounce {
+        0%, 100% {
+          transform: translateY(0) scale(1);
+        }
+        25% {
+          transform: translateY(-8px) scale(1.05);
+        }
+        50% {
+          transform: translateY(-4px) scale(1.08);
+        }
+        75% {
+          transform: translateY(-12px) scale(1.03);
+        }
+      }
+
+      @keyframes button-click {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(0.85) rotate(5deg);
+        }
+        100% {
+          transform: scale(0.9) rotate(0deg);
+        }
+      }
+
+      @keyframes pulse-glow {
+        0%, 100% {
+          opacity: 0.3;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.8;
+          transform: scale(1.2);
+        }
+      }
+
+      @keyframes spin-border {
+        0% {
+          transform: rotate(0deg) scale(1);
+        }
+        50% {
+          transform: rotate(180deg) scale(1.1);
+        }
+        100% {
+          transform: rotate(360deg) scale(1);
+        }
+      }
+
+      @keyframes float-arrow {
+        0%, 100% {
+          transform: translateY(0) rotate(0deg);
+        }
+        25% {
+          transform: translateY(-2px) rotate(2deg);
+        }
+        50% {
+          transform: translateY(-4px) rotate(0deg);
+        }
+        75% {
+          transform: translateY(-1px) rotate(-2deg);
+        }
+      }
+
+      @keyframes particle-1 {
+        0%, 100% {
+          transform: translate(0, 0) scale(1);
+          opacity: 0.8;
+        }
+        25% {
+          transform: translate(-10px, -15px) scale(1.5);
+          opacity: 1;
+        }
+        50% {
+          transform: translate(-20px, -8px) scale(0.8);
+          opacity: 0.6;
+        }
+        75% {
+          transform: translate(-8px, -25px) scale(1.2);
+          opacity: 0.9;
+        }
+      }
+
+      @keyframes particle-2 {
+        0%, 100% {
+          transform: translate(0, 0) scale(1);
+          opacity: 0.7;
+        }
+        33% {
+          transform: translate(12px, -18px) scale(1.3);
+          opacity: 1;
+        }
+        66% {
+          transform: translate(8px, -30px) scale(0.9);
+          opacity: 0.5;
+        }
+      }
+
+      @keyframes particle-3 {
+        0%, 100% {
+          transform: translate(0, 0) scale(1);
+          opacity: 0.6;
+        }
+        50% {
+          transform: translate(15px, -12px) scale(1.8);
+          opacity: 1;
+        }
+      }
+
+      /* Animation Classes */
+      .animate-pulse-glow {
+        animation: pulse-glow 2s ease-in-out infinite;
+      }
+
+      .animate-spin-border {
+        animation: spin-border 3s linear infinite;
+      }
+
+      .animate-float-arrow {
+        animation: float-arrow 2s ease-in-out infinite;
+      }
+
+      .animate-particle-1 {
+        animation: particle-1 3s ease-in-out infinite;
+      }
+
+      .animate-particle-2 {
+        animation: particle-2 2.5s ease-in-out infinite;
+      }
+
+      .animate-particle-3 {
+        animation: particle-3 2s ease-in-out infinite;
+      }
+
+      /* Enhanced hover effects */
+      #back-to-top:hover .animate-float-arrow {
+        animation-duration: 1s;
+      }
+
+      #back-to-top:hover {
+        box-shadow: 0 20px 40px rgba(59, 130, 246, 0.4), 
+                    0 10px 20px rgba(96, 165, 250, 0.3),
+                    0 0 0 8px rgba(59, 130, 246, 0.1);
+      }
+
+      /* Smooth scroll behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Enhanced Theme Toggle Animations */
+      @keyframes theme-switch {
+        0% {
+          transform: scale(1) rotate(0deg);
+        }
+        50% {
+          transform: scale(1.1) rotate(180deg);
+        }
+        100% {
+          transform: scale(1) rotate(360deg);
+        }
+      }
+
+      @keyframes glow-pulse {
+        0%,
+        100% {
+          box-shadow: 0 0 5px rgba(59, 130, 246, 0.3),
+            0 0 10px rgba(59, 130, 246, 0.2);
+        }
+        50% {
+          box-shadow: 0 0 20px rgba(59, 130, 246, 0.6),
+            0 0 30px rgba(59, 130, 246, 0.4);
+        }
+      }
+
+      @keyframes icon-bounce {
+        0%,
+        100% {
+          transform: translateY(0px) scale(1);
+        }
+        50% {
+          transform: translateY(-2px) scale(1.05);
+        }
+      }
+
+      /* Theme toggle specific styles */
+      #theme-toggle:active {
+        animation: theme-switch 0.6s ease-in-out;
+      }
+
+      #theme-toggle:focus {
+        outline: none;
+        animation: glow-pulse 2s ease-in-out infinite;
+      }
+
+      #theme-toggle svg {
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+      }
+
+      #theme-toggle:hover svg {
+        animation: icon-bounce 0.6s ease-in-out infinite;
+      }
+
+      /* Enhanced button states */
+      #theme-toggle {
+        position: relative;
+        backdrop-filter: blur(10px);
+      }
+
+      #theme-toggle::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 0.75rem;
+        padding: 1px;
+        background: linear-gradient(
+          45deg,
+          rgba(59, 130, 246, 0.3),
+          rgba(147, 51, 234, 0.3)
+        );
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: xor;
+        -webkit-mask-composite: xor;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+
+      #theme-toggle:hover::before {
+        opacity: 1;
+      }
+      .cta-primary {
+        position: relative;
+        overflow: hidden;
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        border: none;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+      }
+
+      .cta-primary::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .cta-primary::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #1e40af, #3730a3);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        border-radius: 40px;
+      }
+
+      .cta-primary:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 15px 35px rgba(59, 130, 246, 0.4),
+          0 5px 15px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        background: linear-gradient(135deg, #2563eb, #1e40af);
+      }
+
+      .cta-primary:hover::before {
+        left: 100%;
+      }
+
+      .cta-primary:hover::after {
+        opacity: 0.1;
+      }
+
+      .cta-primary:active {
+        transform: translateY(-1px) scale(1.02);
+      }
+
+      .cta-secondary {
+        position: relative;
+        overflow: hidden;
+        background: transparent;
+        border: 2px solid;
+        border-image: linear-gradient(45deg, #3b82f6, #8b5cf6) 1;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        color: inherit;
+      }
+
+      .cta-secondary::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        border-radius: 40px;
+      }
+
+      .cta-secondary::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(59, 130, 246, 0.3),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .cta-secondary:hover {
+        transform: translateY(-3px) scale(1.05);
+        border-color: transparent;
+        color: white;
+        box-shadow: 0 15px 35px rgba(59, 130, 246, 0.3),
+          0 5px 15px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      }
+
+      .cta-secondary:hover::before {
+        opacity: 1;
+      }
+
+      .cta-secondary:hover::after {
+        left: 100%;
+      }
+
+      .cta-secondary:active {
+        transform: translateY(-1px) scale(1.02);
+      }
+
+      .dark .cta-secondary {
+        border-color: #4f46e5;
+      }
+
+      .dark .cta-secondary:hover {
+        color: white;
+      }
+
+      .cta-primary:focus,
+      .cta-secondary:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5),
+          0 15px 35px rgba(59, 130, 246, 0.4);
+      }
+
+      .download-btn {
+        background-color: #000;
+        color: white;
+        padding: 25px 50px;
+        font-size: 15px;
+        font-weight: bold;
+        border: 2px solid #333;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .download-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(135deg, #0073ff, #0088ff, #2e68d3);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+        z-index: -1;
+      }
+
+      .download-btn:hover {
+        transform: scale(1.05);
+        border-color: #0048ff;
+        box-shadow: 0 10px 25px rgba(0, 76, 255, 0.2),
+          0 0 20px rgba(0, 102, 255, 0.4);
+      }
+
+      .download-btn:hover::before {
+        opacity: 0.2;
+      }
+      .auth-buttons {
+        display: flex;
+        gap: 20px;
+      }
+
+      .auth-btn {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 30px;
+        font-size: 16px;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s ease;
+      }
+
+      .auth-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.2),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .auth-btn:hover {
+        background: linear-gradient(135deg, #0056b3, #00aaff);
+        box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+      }
+
+      .auth-btn:hover::before {
+        left: 100%;
+      }
+      .nav-link {
+        padding: 12px 20px;
+        border-radius: 25px;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        background: transparent;
+        border: 2px solid transparent;
+      }
+
+      .nav-link::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: 25px;
+        padding: 2px;
+        background: linear-gradient(45deg, #3b82f6, #8b5cf6, #06b6d4, #10b981);
+        background-size: 300% 300%;
+        mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+        mask-composite: xor;
+        -webkit-mask-composite: xor;
+        opacity: 0;
+        transition: all 0.4s ease;
+        animation: gradientShift 3s ease infinite;
+      }
+
+      .nav-link::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        transition: left 0.6s ease;
+      }
+
+      .nav-link:hover {
+        background: linear-gradient(
+          135deg,
+          rgba(59, 130, 246, 0.1),
+          rgba(139, 92, 246, 0.1)
+        );
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(59, 130, 246, 0.3),
+          0 0 0 1px rgba(255, 255, 255, 0.1),
+          inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        transform: translateY(-3px) scale(1.05);
+        color: #3b82f6;
+      }
+
+      .dark .nav-link:hover {
+        color: #60a5fa;
+        background: linear-gradient(
+          135deg,
+          rgba(59, 130, 246, 0.2),
+          rgba(139, 92, 246, 0.2)
+        );
+        box-shadow: 0 8px 32px rgba(59, 130, 246, 0.4),
+          0 0 0 1px rgba(255, 255, 255, 0.1),
+          inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      }
+
+      .nav-link:hover::before {
+        opacity: 1;
+      }
+
+      .nav-link:hover::after {
+        left: 100%;
+      }
+
+      .nav-link:active {
+        transform: translateY(-1px) scale(1.02);
+      }
+
+      @keyframes gradientShift {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .nav-link:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.5),
+          0 8px 32px rgba(139, 92, 246, 0.3);
+      }
+
+      /* Active Page Styling */
+      .nav-link.active-page {
+        background: linear-gradient(135deg, rgba(139, 92, 246, 0.15), rgba(168, 85, 247, 0.15));
+        border: 2px solid rgba(139, 92, 246, 0.4);
+        border-radius: 20px;
+        color: #8b5cf6 !important;
+        font-weight: 600;
+        position: relative;
+        box-shadow: 0 4px 15px rgba(139, 92, 246, 0.2),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        transform: translateY(0);
+      }
+
+      .dark .nav-link.active-page {
+        background: linear-gradient(135deg, rgba(139, 92, 246, 0.25), rgba(168, 85, 247, 0.25));
+        border-color: rgba(139, 92, 246, 0.6);
+        color: #a855f7 !important;
+        box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+      }
+
+      .nav-link.active-page::before {
+        content: '';
+        position: absolute;
+        inset: -2px;
+        background: linear-gradient(45deg, #8b5cf6, #a855f7, #8b5cf6);
+        border-radius: 22px;
+        opacity: 0.3;
+        z-index: -1;
+        animation: active-border-glow 3s ease-in-out infinite;
+      }
+
+      @keyframes active-border-glow {
+        0%, 100% {
+          opacity: 0.3;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.6;
+          transform: scale(1.02);
+        }
+      }
+
+      .nav-link.active-page:hover {
+        transform: translateY(-2px) scale(1.05);
+        box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+      }
+
+      /* Feature items animations */
+      .feature-item {
+        transition: all 0.3s ease;
+        padding: 1rem;
+        border-radius: 1rem;
+        cursor: pointer;
+      }
+
+      .feature-item:hover {
+        background: rgba(59, 130, 246, 0.05);
+        transform: translateX(8px);
+      }
+
+      .dark .feature-item:hover {
+        background: rgba(59, 130, 246, 0.1);
+      }
+
+      .feature-item:hover .flex-shrink-0 {
+        transform: scale(1.1);
+        box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3);
+      }
+
+      .feature-item .flex-shrink-0 {
+        transition: all 0.3s ease;
+      }
+
+      /* Pricing Section Styles */
+      .pricing-card {
+        transition: all 0.3s ease;
+      }
+
+      .pricing-card:hover {
+        transform: translateY(-8px);
+      }
+
+      .pricing-toggle {
+        transition: all 0.3s ease;
+      }
+
+      .pricing-toggle.active {
+        background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        color: white;
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+      }
+
+      .pricing-toggle:not(.active):hover {
+        background: rgba(59, 130, 246, 0.1);
+      }
+
+      /* Pricing card hover effects */
+      .pricing-card:hover .pricing-card-button {
+        transform: scale(1.05);
+      }
+
+      /* Most popular badge animation */
+      @keyframes pulse-badge {
+        0%,
+        100% {
+          transform: translateX(-50%) scale(1);
+        }
+        50% {
+          transform: translateX(-50%) scale(1.05);
+        }
+      }
+
+      .pricing-card .bg-gradient-to-r {
+        animation: pulse-badge 2s ease-in-out infinite;
+      }
+
+      /* Contact Section Styles */
+      .contact-item {
+        transition: all 0.3s ease;
+        padding: 1rem;
+        border-radius: 1rem;
+      }
+
+      .contact-item:hover {
+        background: rgba(59, 130, 246, 0.05);
+        transform: translateX(8px);
+      }
+
+      .dark .contact-item:hover {
+        background: rgba(59, 130, 246, 0.1);
+      }
+
+      /* Form input focus effects */
+      input:focus,
+      textarea:focus {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+      }
+
+      /* Submit button animation */
+      button[type="submit"]:active {
+        transform: scale(0.98);
+      }
+    </style>
+
+    <!-- Footer Section -->
+    <footer
+      class="bg-slate-800 dark:bg-slate-900 text-white py-8 transition-colors duration-300"
+    >
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+          <!-- Company Info -->
+          <div class="lg:col-span-1">
+            <div class="flex items-center mb-4">
+              <div
+                class="w-6 h-6 bg-blue-600 rounded mr-2 flex items-center justify-center"
+              >
+                <span class="text-white text-sm font-bold">W</span>
+              </div>
+              <span class="text-lg font-bold">WEXY</span>
+            </div>
+            <p class="text-gray-400 text-sm mb-4">WEXY@gmail.com</p>
+            <p class="text-gray-400 text-sm mb-6">+2012-345-6789</p>
+
+            <!-- Social Media -->
+            <div class="mb-4">
+              <p class="text-white font-semibold mb-3">Follow Us</p>
+              <div class="flex space-x-3">
+                <!-- Twitter -->
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center hover:bg-blue-700 transition-colors"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                    />
+                  </svg>
+                </a>
+                <!-- Facebook -->
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center hover:bg-blue-700 transition-colors"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                    />
+                  </svg>
+                </a>
+                <!-- LinkedIn -->
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center hover:bg-blue-700 transition-colors"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                    />
+                  </svg>
+                </a>
+                <!-- Instagram -->
+                <a
+                  href="#"
+                  class="w-8 h-8 bg-blue-600 rounded flex items-center justify-center hover:bg-blue-700 transition-colors"
+                >
+                  <svg
+                    class="w-4 h-4 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- About Us -->
+          <div>
+            <h3 class="text-white font-semibold mb-4">About Us</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Support Center</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Customer Support</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Copyright</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Popular Campaign</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Our Information -->
+          <div>
+            <h3 class="text-white font-semibold mb-4">Our Information</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Return Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Terms & Conditions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Site Map</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Store Hours</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- My Account -->
+          <div>
+            <h3 class="text-white font-semibold mb-4">My Account</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Press Inquiries</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Social Media Directories</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Images & B-roll</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Permissions</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Speaker Requests</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Policy -->
+          <div>
+            <h3 class="text-white font-semibold mb-4">Policy</h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Application Security</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Software Principles</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Unwanted Software Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition-colors text-sm"
+                  >Responsible Supply Chain</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Border -->
+        <div class="border-t border-gray-700 mt-8 pt-6">
+          <div class="flex flex-col md:flex-row justify-between items-center">
+            <p class="text-gray-400 text-sm">
+              © 2024 WEXY. All rights reserved.
+            </p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors text-sm"
+                >Privacy Policy</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors text-sm"
+                >Terms of Service</a
+              >
+              <a
+                href="#"
+                class="text-gray-400 hover:text-white transition-colors text-sm"
+                >Cookie Policy</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Enhanced Back to Top Button -->
+    <button
+      id="back-to-top"
+      class="w-16 h-16 bg-gradient-to-br from-purple-500 via-purple-600 to-indigo-700 hover:from-blue-400 hover:via-blue-500 hover:to-blue-600 text-white rounded-full shadow-2xl hover:shadow-blue-500/50 transition-all duration-500 transform opacity-0 invisible translate-y-8 group flex items-center justify-center relative overflow-hidden"
+      aria-label="Back to top"
+    >
+      <!-- Animated background glow -->
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-400/30 via-cyan-500/30 to-blue-400/30 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-700 animate-pulse-glow"></div>
+      
+      <!-- Rotating border ring -->
+      <div class="absolute -inset-1 bg-gradient-to-r from-blue-400 via-cyan-500 to-blue-400 rounded-full opacity-0 group-hover:opacity-70 transition-all duration-500 animate-spin-border blur-sm"></div>
+      
+      <!-- Shimmer effect -->
+      <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/40 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out rounded-full"></div>
+      
+      <!-- Inner highlight -->
+      <div class="absolute inset-1 bg-gradient-to-br from-white/20 via-transparent to-transparent rounded-full"></div>
+      
+      <!-- Arrow with enhanced animations -->
+      <svg
+        class="w-8 h-8 relative z-10 transition-all duration-500 group-hover:-translate-y-1 group-hover:scale-110 drop-shadow-lg animate-float-arrow"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        stroke-width="3"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+      
+      <!-- Floating particles -->
+      <div class="absolute -top-1 -right-1 w-2 h-2 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 animate-particle-1"></div>
+      <div class="absolute -bottom-1 -left-1 w-1.5 h-1.5 bg-blue-200 rounded-full opacity-0 group-hover:opacity-100 animate-particle-2"></div>
+      <div class="absolute top-1/2 -right-2 w-1 h-1 bg-cyan-300 rounded-full opacity-0 group-hover:opacity-100 animate-particle-3"></div>
+    </button>
+    <script>
+      const toggle = document.getElementById("theme-toggle");
+      const sun = document.getElementById("sun");
+      const moon = document.getElementById("moon");
+
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("light");
+      } else {
+        document.documentElement.classList.add("light");
+        document.documentElement.classList.remove("dark");
+      }
+
+      toggle.addEventListener("click", () => {
+        if (document.documentElement.classList.contains("dark")) {
+          document.documentElement.classList.remove("dark");
+          document.documentElement.classList.add("light");
+          localStorage.theme = "light";
+        } else {
+          document.documentElement.classList.remove("light");
+          document.documentElement.classList.add("dark");
+          localStorage.theme = "dark";
+        }
+      });
+
+      // Back to Top Button Functionality
+      const backToTopButton = document.getElementById("back-to-top");
+
+      // Show/hide button based on scroll position
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          backToTopButton.classList.add("show");
+        } else {
+          backToTopButton.classList.remove("show");
+        }
+      });
+
+      // Smooth scroll to top when clicked
+      backToTopButton.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
+  </body>
+</html>
